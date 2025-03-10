@@ -47,7 +47,7 @@ function HomePage() {
             icon: <Sandwich className="w-6 h-6" />
         },
         {
-            name: "परी-परी सैंडविच",
+            name: "पेरी-पेरी सैंडविच",
             description: "ग्रील्ड भाज्या, हुमस, फेटा चीज",
             price: "₹50",
             image: "https://images.unsplash.com/photo-1540914124281-342587941389?auto=format&fit=crop&w=800",
@@ -91,7 +91,7 @@ function HomePage() {
                                 {item.icon}
                                 <h3 className="text-xl font-semibold text-gray-800">{item.name}</h3>
                             </div>
-                            <p className="text-gray-600 mb-4">{item.description}</p>
+                            {/* <p className="text-gray-600 mb-4">{item.description}</p> */}
                             <p className="text-2xl font-bold text-orange-600">{item.price}</p>
                         </div>
                     </div>
@@ -114,7 +114,7 @@ function HomePage() {
             <div className="container mx-auto px-4 py-12">
                 <MenuSection title={<>पिझ्झा <Pizza className="w-6 h-6" /></>} items={pizzas} />
                 <MenuSection title={<>सैंडविच <Sandwich className="w-6 h-6" /></>} items={sandwiches} />
-                <MenuSection title={<>फ्रीस <img src={frenchFries} alt="French Fries" className="w-6 h-6" /></>} items={fries} />
+                <MenuSection title={<>फ्रेंच फ्राईज <img src={frenchFries} alt="French Fries" className="w-6 h-6" /></>} items={fries} />
 
                 {/* Contact Buttons */}
                 <div className="flex justify-center gap-6 mt-12">

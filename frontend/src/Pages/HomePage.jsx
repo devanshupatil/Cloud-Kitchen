@@ -1,10 +1,17 @@
 import React from 'react';
 import { Phone, MessageCircle, Pizza, Sandwich, Rotate3D as Potato } from 'lucide-react';
 import frenchFries from '../assets/fried-potatoes.png' 
-import panieerPizza from '../assets/WhatsApp Image 2025-03-10 at 17.21.55(1).jpeg'
-import cheesePizza from '../assets/cheesePizza.jpg'
-import vegCheeseSandwich from '../assets/VegCheeseSandwich.jpg'
+import vegCheesePizzaMini from '../assets/veg-cheese-pizaa-mini.jpeg'
 import FrenchFriesPeriPeri from '../assets/FrenchFriesPeri-Peri.jpg'
+import periPeriSandwich from '../assets/peri-peri-Sandwich.jpeg'
+import कॉर्न_चीज_सँडविच from '../assets/कॉर्न चीज सँडविच.jpeg'
+import पनीर_चीज_पिझ्झा_मध्यम from '../assets/पनीर चीज पिझ्झा (मध्यम).jpeg'
+import पनीर_चीज_पिझ्झा_मिनी from '../assets/पनीर चीज पिझ्झा (मिनी).jpeg'
+import पनीर_चीज_सँडविच from '../assets/पनीर चीज सँडविच.jpeg'
+import व्हेज_चीज_पिझ्झा_मध्यम from '../assets/व्हेज चीज पिझ्झा (मध्यम).jpg'
+import व्हेज_चीज_सँडविच from '../assets/व्हेज चीज सँडविच.jpeg'
+
+
 
 function HomePage() {
     const pizzas = [
@@ -12,28 +19,28 @@ function HomePage() {
             name: "व्हेज चीज पिझ्झा (मिनी)",
             description: "ताजे मोझारेला, तुळस, चेरी टोमॅटो, ऑलिव्ह ऑइल",
             price: "₹80",
-            image: cheesePizza,
+            image: vegCheesePizzaMini,
             icon: <Pizza className="w-6 h-6" />
         },
         {
             name: "पनियर चीज पिझ्झा (मिनी)",
             description: "ताजे मोझारेला, पनीर, तुळस",
             price: "₹100",
-            image: panieerPizza,
+            image: पनीर_चीज_पिझ्झा_मिनी,
             icon: <Pizza className="w-6 h-6" />
         },
         {
             name: "व्हेज चीज पिझ्झा (मध्यम)",
             description: "डबल पीपरोनी, एक्सट्रा चीज, इटल रस",
             price: "₹120",
-            image: "https://images.unsplash.com/photo-1628840042765-356cda07504e?auto=format&fit=crop&w=800",
+            image: व्हेज_चीज_पिझ्झा_मध्यम,
             icon: <Pizza className="w-6 h-6" />
         },
         {
             name: "पनीर चीज पिझ्झा (मध्यम)",
             description: "डबल पीपरोनी, एक्सट्रा चीज, इटल रस",
-            price: "₹140",
-            image: "https://images.unsplash.com/photo-1513104890138-7c749659a591?auto=format&fit=crop&w=800",
+            price: "₹150",
+            image: पनीर_चीज_पिझ्झा_मध्यम,
             icon: <Pizza className="w-6 h-6" />
         },
     ];
@@ -43,21 +50,28 @@ function HomePage() {
             name: "व्हेज चीज सैंडविच",
             description: "तरक, बैकोन, लेट्स, टोमाटो, मायो",
             price: "₹40",
-            image: vegCheeseSandwich,
+            image: व्हेज_चीज_सँडविच,
             icon: <Sandwich className="w-6 h-6" />
         },
         {
             name: "पेरी-पेरी सैंडविच",
             description: "ग्रील्ड भाज्या, हुमस, फेटा चीज",
             price: "₹50",
-            image: "https://images.unsplash.com/photo-1540914124281-342587941389?auto=format&fit=crop&w=800",
+            image: periPeriSandwich,
             icon: <Sandwich className="w-6 h-6" />
         },
         {
             name: "पनीर चीज सैंडविच",
             description: "ग्राइल्ड चिकन, पेस्टो, मोज़रा, टोमाटो",
             price: "₹60",
-            image: "https://images.unsplash.com/photo-1621800043295-a73fe2f76e2c?auto=format&fit=crop&w=800",
+            image: पनीर_चीज_सँडविच,
+            icon: <Sandwich className="w-6 h-6" />
+        },
+        {
+            name: "कॉर्न चीज सँडविच",
+            description: "ग्राइल्ड चिकन, पेस्टो, मोज़रा, टोमाटो",
+            price: "₹60",
+            image: कॉर्न_चीज_सँडविच,
             icon: <Sandwich className="w-6 h-6" />
         },
     ];
@@ -71,7 +85,7 @@ function HomePage() {
             icon: <img src={frenchFries} alt="French Fries" className="w-6 h-6" />,
         },
         {
-            name: "फ्रेंच फ्राईज (सैल्ट)",
+            name: "फ्रेंच फ्राईज (सॉल्ल्टेड)",
             description: "चीज सैँट, बैकोन बिट्स, ग्रीन ओनियोन्स",
             price: "₹50",
             image: "https://images.unsplash.com/photo-1576107232684-1279f390859f?auto=format&fit=crop&w=800",
@@ -106,7 +120,7 @@ function HomePage() {
             <div className="bg-gradient-to-r from-orange-500 to-red-600 text-white py-16">
                 <div className="container mx-auto px-4 text-center">
                     <h1 className="text-4xl md:text-5xl font-bold mb-4">क्लाउड किचन</h1>
-                    <p className="text-xl opacity-90">पिझ्झा • सैंडविचेस • फ्रीस</p>
+                    <p className="text-xl opacity-90">पिझ्झा • सैंडविचेस • फ्रेंच फ्राईज</p>
                 </div>
             </div>
 
